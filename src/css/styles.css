@@ -1,5 +1,6 @@
 @import url('./utils/variables.css');
 @import url('./utils/visually-hidden.css');
+@import url('./utils/fonts.css');
 
 @import url('./base/comon.css');
 @import url('./base/container.css');

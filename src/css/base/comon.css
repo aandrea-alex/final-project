@@ -35,7 +35,7 @@ button {
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
-  color: var(--slate);
-  background-color: var(--white);
+  font-family: 'Gilroy', sans-serif;
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
 }
