@@ -1,10 +1,10 @@
 :root {
-  --primary-color: #fbfbfb;
-  --secondary-color: #0c0c0c;
-  --accent-color: #3350e9;
+  --background: #fbfbfb;
+  --main: #0c0c0c;
+  --accent: #3350e9;
   --hover-color: #1f3cd4;
 
-  --bgr-section-color: #f3f3f3;
+  --cards-color: #f3f3f3;
 
   font-family: 'Gilroy', sans-serif;
   font-weight: 400;
