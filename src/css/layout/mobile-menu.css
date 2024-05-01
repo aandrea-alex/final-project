@@ -3,7 +3,7 @@
   right: 0;
   top: 0;
   width: 275px;
-  height: 100vw;
+  height: 100vh;
   background-color: var(--main);
   color: var(--background);
   transform: translateX(100vw);
