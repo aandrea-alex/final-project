@@ -81,6 +81,11 @@
   background-image: url(/img/hero/bgr/hero-mobile-bgr@1x.jpg);
   margin: 0 auto;
 }
+.hero-img-wrapper {
+  width: 100%;
+  border-radius: 30px;
+  overflow: hidden;
+}
 
 @media screen and (min-resolution: 192dpi) and (min-width: 375px),
   screen and (min-resolution: 2dppx) and (min-width: 375px),
