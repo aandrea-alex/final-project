@@ -62,6 +62,7 @@
 }
 
 .contact-form-send-button {
+  width: 160px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -75,7 +76,7 @@
 
 .contact-form-send-button:hover,
 .contact-form-send-button:focus {
-  border-color: var(--hover-color);
+  background-color: var(--hover-color);
 }
 
 .contact-img-wrapper {

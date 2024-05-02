@@ -55,7 +55,7 @@
 
 .footer-social-list-icon:hover,
 .footer-social-list-icon:focus {
-  stroke: var(--accent);
+  stroke: var(--hover-color);
 }
 
 .footer-contact-link {
