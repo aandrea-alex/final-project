@@ -27,6 +27,7 @@
   padding-left: 35px;
   padding-bottom: 18px;
   padding-right: 36px;
+  margin-bottom: 10px;
 }
 
 .catalog-info-wrapper {
@@ -41,6 +42,7 @@
   color: var(--main);
   overflow: hidden;
   text-overflow: ellipsis;
+  margin-bottom: 8px;
 }
 
 .catalog-list-price {
