@@ -17,7 +17,7 @@
 
     
     <script type="module" crossorigin src="/final-project/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/final-project/assets/index-9f553dba.css">
+    <link rel="stylesheet" href="/final-project/assets/index-0af1db60.css">
   </head>
   <body>
     <header class="header-page">
@@ -332,12 +332,99 @@
   </div>
 </section>
 
-      <!-- <section class="section">
+      <section class="section">
   <div class="container">
-    <h2>Sale</h2>
+    <h2 class="section-title catalog-section-title">Sale</h2>
+    <div class="sale-container">
+      <div class="sale-images-wrapper">
+        <ul class="sale-racurses">
+          <li class="sale-racurses-item">
+            <img
+              srcset="/final-project/assets/sale-desktop-prod1@1x-168fc464.png 96w, /final-project/assets/sale-desktop-prod1@2x-226f79b2.png 192w, data:image/png;base64,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 52w, /final-project/assets/sale-mobile-prod1@2x-d3e2dbca.png 104w"
+              sizes="(min-width: 768px) 96px, 
+               (max-width: 767px) 52px"
+              src="../img/sale/mobile/sale-mobile-prod1@1x.png"
+              alt="racurs 1"
+            />
+          </li>
+          <li class="sale-racurses-item">
+            <img
+              srcset="/final-project/assets/sale-desktop-prod2@1x-cd4ce240.png 96w, /final-project/assets/sale-desktop-prod2@2x-652c418a.png 192w, data:image/png;base64,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 52w, /final-project/assets/sale-mobile-prod2@2x-017e0417.png 104w"
+              sizes="(min-width: 768px) 96px, 
+               (max-width: 767px) 52px"
+              src="../img/sale/mobile/sale-mobile-prod3@1x.png"
+              alt="racurs 2"
+            />
+          </li>
+          <li class="sale-racurses-item">
+            <img
+              srcset="
+                ./img/sale/desktop/sale-desktop-prod3@1x.png  96w,
+                ./img/sale/desktop/sale-desktop-prod3@2x.png 192w,
+                ./img/sale/mobile/sale-mobile-prod3@1x.png    52w,
+                ./img/ssale/mobile/ale-mobile-prod3@2x.png   104w
+              "
+              sizes="(min-width: 768px) 96px, 
+               (max-width: 767px) 52px"
+              src="../img/sale/mobile/sale-mobile-prod3@1x.png"
+              alt="racurs 3"
+            />
+          </li>
+          <li class="sale-racurses-item">
+            <img
+              srcset="
+                ./img/sale/desktop/sale-desktop-prod4@1x.png  96w,
+                ./img/sale/desktop/sale-desktop-prod4@2x.png 192w,
+                ./img/ssale/mobile/ale-mobile-prod4@1x.png    52w,
+                ./img/sale/mobile/sale-mobile-prod4@2x.png   104w
+              "
+              sizes="(min-width: 768px) 96px, 
+               (max-width: 767px) 52px"
+              src="../img/sale/mobile/sale-mobile-prod2@1x.png"
+              alt="racurs 4"
+            />
+          </li>
+        </ul>
+        <div class="sale-big-img-wrapper">
+          <img
+            class="sale-big-img"
+            srcset="/final-project/assets/sale-desktop-big@1x-31ea52d4.png 96w, /final-project/assets/sale-desktop-big@2x-4bcb9624.png 192w, /final-project/assets/sale-mobile-big@1x-2a6b23be.png 52w, /final-project/assets/sale-mobile-big@2x-5a33ff1e.png 104w"
+            sizes="(min-width: 768px) 96px, 
+               (max-width: 767px) 52px"
+            src="/final-project/assets/sale-mobile-big@1x-2a6b23be.png"
+            alt="Big whatch photo"
+          />
+        </div>
+      </div>
+      <div class="sale-info-wrapper">
+        <h3 class="sale-info-title">
+          MARQ® Commander (Gen 2) - Carbon Edition
+        </h3>
+        <p class="sale-product-tag">Product tag: 706587</p>
+        <div class="sale-prices">
+          <p class="sale-new-price">€1500</p>
+          <p class="sale-old-price">€3000</p>
+        </div>
+        <p class="sale-info">
+          The Garmin MARQ Commander Gen 2 Carbon Edition is a modern smartwatch
+          for adventurers that takes materials and features to the next level.
+          The body of the watch is made of very durable Fused Carbon Fiber
+          material and has a precise AMOLED touch screen. The sensitive touch
+          screen is complemented by buttons that can be used in any conditions.
+        </p>
+        <ul class="sale-products-list">
+          <li class="sale-products-item"><p>Fused carbon fiber</p></li>
+          <li class="sale-products-item"><p>F Grade-5 Titanuim</p></li>
+          <li class="sale-products-item"><p>Athlete</p></li>
+          <li class="sale-products-item"><p>Golfer</p></li>
+          <li class="sale-products-item"><p>Commander</p></li>
+          <li class="sale-products-item"><p>Adventurer</p></li>
+        </ul>
+      </div>
+    </div>
   </div>
 </section>
- -->
+
       <section class="section" id="id-reviews">
   <div class="container reviews-container">
     <h2 class="section-title reviews-section-title">Reviews</h2>
