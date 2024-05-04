@@ -47,6 +47,7 @@
 .about-view-wrapper:hover,
 .about-view-wrapper:focus {
   background-color: var(--hover-color);
+  cursor: pointer;
 }
 
 .about-view {

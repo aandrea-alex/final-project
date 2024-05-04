@@ -76,6 +76,7 @@
 .contact-form-send-button:hover,
 .contact-form-send-button:focus {
   background-color: var(--hover-color);
+  cursor: pointer;
 }
 
 .contact-img-wrapper {

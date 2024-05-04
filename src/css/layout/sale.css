@@ -48,6 +48,7 @@
 
 .sale-big-img:hover{
   transform: scale(1.1);
+  cursor: pointer;
 }
 
 .sale-info-wrapper {
