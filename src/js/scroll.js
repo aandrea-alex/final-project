@@ -1,8 +1,16 @@
+import {
+  removeActiveClass,
+  addActiveClass,
+  getLastElementMenu,
+  getFirstElementMenu,
+} from '../js/select-menu.js';
 const onScrollUp = () => {
   if (window.scrollY != 0) {
     setTimeout(function () {
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }, 300);
+    removeActiveClass();
+    addActiveClass(getFirstElementMenu());
   }
 };
 
@@ -17,6 +25,8 @@ const onScrollDown = () => {
         behavior: 'smooth',
       });
     }, 300);
+    removeActiveClass();
+    addActiveClass(getLastElementMenu());
   }
 };
 
