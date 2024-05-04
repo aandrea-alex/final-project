@@ -1,19 +1,22 @@
-const menuItems = document.querySelectorAll('.js-menu-item');
-menuItems.forEach(item => {
-  item.addEventListener('click', event => {
+const headerMenuRef = document.querySelector('.js-menu');
+let menuItems = [];
+if (headerMenuRef) {
+  menuItems = headerMenuRef.querySelectorAll('a');
+}
+
+headerMenuRef &&
+  headerMenuRef.addEventListener('click', event => {
+    const item = event.target;
+    if (!item.matches('a')) return;
     event.preventDefault();
     removeActiveClass();
     addActiveClass(item);
     const targetId = item.getAttribute('href').substring(1);
     const targetElement = document.getElementById(targetId);
-    if (targetElement) {
-      targetElement.scrollIntoView({ behavior: 'smooth' });
-    }
+    targetElement && targetElement.scrollIntoView({ behavior: 'smooth' });
   });
-});
 
 export function removeActiveClass() {
-  const menuItems = document.querySelectorAll('.js-menu-item');
   menuItems.forEach(item => {
     item.classList.remove('header-menu-item-link-active');
   });
