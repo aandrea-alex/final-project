@@ -27,16 +27,12 @@
   }
 
   .content-container {
-    padding-top: 92px;
+    padding-top: 88px;
   }
 }
 
 @media screen and (min-width: 1280px) {
   .container {
     width: 1182px;
-  }
-
-  .content-container {
-    padding-top: 88px;
   }
 }
