@@ -78,6 +78,7 @@
 
 .hero-scroll:hover {
   color: var(--accent);
+  cursor: pointer;
 }
 
 .hero-img-wrapper {
