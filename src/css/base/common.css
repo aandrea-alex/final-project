@@ -40,3 +40,7 @@ body {
   color: var(--main);
   background-color: var(--background);
 }
+
+.rotated {
+  transform: rotate(90deg); 
+}

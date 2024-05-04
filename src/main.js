@@ -3,3 +3,4 @@ import './js/current-year';
 import './js/scroll';
 import './js/select-menu';
 import './js/mobile-menu-handler';
+import './js/rotate-img';

@@ -37,6 +37,19 @@
   border: 1px solid rgba(12, 12, 12, 0.05);
 }
 
+
+.sale-big-img-wrapper:hover {
+  cursor: pointer;
+}
+
+.sale-big-img {
+  transition: transform 0.3s ease;
+}
+
+.sale-big-img:hover{
+  transform: scale(1.1);
+}
+
 .sale-info-wrapper {
   background-color: var(--accent);
   border-radius: 30px;
@@ -208,3 +221,18 @@
     height: 32px;
   }
 }
+
+.rotated {
+  animation: rotateAnimation 4s linear forwards;
+}
+
+@keyframes rotateAnimation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
