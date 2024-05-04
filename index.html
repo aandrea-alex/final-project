@@ -17,29 +17,48 @@
 
     
     <script type="module" crossorigin src="/final-project/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/final-project/assets/index-7533c9e5.css">
+    <link rel="stylesheet" href="/final-project/assets/index-9fba7a59.css">
   </head>
   <body>
-    <header class="header-page">
+    <header class="header-page fixed-menu">
   <div class="container header-container">
     <nav class="header-navigation">
       <a href="./index.html" class="header-logo">watchcharm</a>
       <ul class="header-menu">
         <li>
           <a
-            href="./index.html"
-            class="header-menu-item-link header-menu-item-link-active"
+            href="#id-hero"
+            class="header-menu-item-link header-menu-item-link-active js-menu-item"
             >Home</a
           >
         </li>
         <li>
-          <a href="#id-about" class="header-menu-item-link">About Us</a>
+          <a href="#id-about" class="header-menu-item-link js-menu-item"
+            >About Us</a
+          >
         </li>
-        <li><a href="#id-catalog" class="header-menu-item-link">Catalog</a></li>
-        <li><a href="#id-sale" class="header-menu-item-link">Sale</a></li>
-        <li><a href="#id-reviews" class="header-menu-item-link">Reviews</a></li>
         <li>
-          <a href="#id-contact" class="header-menu-item-link">Contact Us</a>
+          <a href="#id-catalog" class="header-menu-item-link js-menu-item"
+            >Catalog</a
+          >
+        </li>
+        <li>
+          <a href="#id-sale" class="header-menu-item-link js-menu-item">Sale</a>
+        </li>
+        <li>
+          <a href="#id-reviews" class="header-menu-item-link js-menu-item"
+            >Reviews</a
+          >
+        </li>
+        <li>
+          <a href="#id-contact" class="header-menu-item-link js-menu-item"
+            >Contact Us</a
+          >
+        </li>
+        <li>
+          <a href="#id-footer" class="header-menu-item-link js-menu-item"
+            >Scroll Down</a
+          >
         </li>
       </ul>
     </nav>
@@ -108,7 +127,7 @@
   </div>
 </header>
 
-    <main>
+    <main class="content-container" id="id-hero">
       <section class="section hero-section">
   <div class="container">
     <div class="hero-title-photo-wrapper">
@@ -168,13 +187,14 @@
         alt="Magic Watch"
       />
     </div>
+    <div id="id-about"></div>
   </div>
 </section>
 
       <section class="section">
   <div class="container about-container">
     <div class="about-info-wrapper">
-      <h2 class="section-title about-section-title" id="id-about">About Us</h2>
+      <h2 class="section-title about-section-title">About Us</h2>
       <ul class="about-info">
         <li class="about-info-item">
           Welcome to our premium watch collection, where luxury and style meet
@@ -201,11 +221,12 @@
         src="../img/about/about-mobile@1x.jpg"
         alt="watch photo"
       />
+      <div id="id-catalog"></div>
     </div>
   </div>
 </section>
 
-      <section class="catalog section" id="id-catalog">
+      <section class="section catalog-section">
   <div class="container catalog-container">
     <h2 class="section-title catalog-section-title">Catalog</h2>
     <ul class="catalog-list">
@@ -333,12 +354,13 @@
         </div>
       </div>
     </div>
+    <div id="id-sale"></div>
   </div>
 </section>
 
       <section class="section">
   <div class="container">
-    <h2 class="section-title catalog-section-title" id="id-sale">Sale</h2>
+    <h2 class="section-title catalog-section-title">Sale</h2>
     <div class="sale-container">
       <div class="sale-images-wrapper">
         <ul class="sale-racurses">
@@ -415,12 +437,13 @@
         </ul>
       </div>
     </div>
+    <div id="id-reviews"></div>
   </div>
 </section>
 
       <section class="section">
   <div class="container reviews-container">
-    <h2 class="section-title reviews-section-title" id="id-reviews">Reviews</h2>
+    <h2 class="section-title reviews-section-title">Reviews</h2>
     <ul class="reviews-list">
       <li class="reviews-list-item">
         <img
@@ -480,14 +503,13 @@
         </div>
       </li>
     </ul>
+    <div id="id-contact"></div>
   </div>
 </section>
 
       <section class="section">
   <div class="container">
-    <h2 class="section-title contact-section-title" id="id-contact">
-      Contact Us
-    </h2>
+    <h2 class="section-title contact-section-title">Contact Us</h2>
     <div class="contact-container">
       <div class="contact-form-wrapper">
         <p class="contact-text">
@@ -555,6 +577,7 @@
         />
       </div>
     </div>
+    <div id="id-footer"></div>
   </div>
 </section>
 
