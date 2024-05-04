@@ -7,7 +7,6 @@
 
 .content-container {
   padding-top: 74px;
-  margin-bottom: 74px;
 }
 
 @media screen and (min-width: 375px) {
@@ -29,7 +28,6 @@
 
   .content-container {
     padding-top: 92px;
-    margin-bottom: 92px;
   }
 }
 
@@ -40,6 +38,5 @@
 
   .content-container {
     padding-top: 88px;
-    margin-bottom: 88px;
   }
 }
