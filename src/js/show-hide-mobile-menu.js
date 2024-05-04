@@ -4,10 +4,14 @@ const buttonCloseMenuRef = document.querySelector(
   '.js-close-mobile-menu-button'
 );
 
-buttonMenuRef.addEventListener('click', () => {
-  mobileMenuRef.classList.add('is-open');
-});
+buttonMenuRef &&
+  mobileMenuRef &&
+  buttonMenuRef.addEventListener('click', () => {
+    mobileMenuRef.classList.add('is-open');
+  });
 
-buttonCloseMenuRef.addEventListener('click', () => {
-  mobileMenuRef.classList.remove('is-open');
-});
+buttonCloseMenuRef &&
+  mobileMenuRef &&
+  buttonCloseMenuRef.addEventListener('click', () => {
+    mobileMenuRef.classList.remove('is-open');
+  });

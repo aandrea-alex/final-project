@@ -81,7 +81,7 @@
 }
 
 .hero-img-wrapper {
-  width: 335px;
+  max-width: 335px;
   border-radius: 30px;
 }
 
@@ -139,7 +139,7 @@
   }
 
   .hero-img-wrapper {
-    width: 704px;
+    max-width: 704px;
     border-radius: 50px;
   }
 }
@@ -172,6 +172,6 @@
   }
 
   .hero-img-wrapper {
-    width: 1150px;
+    max-width: 1150px;
   }
 }
