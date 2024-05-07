@@ -30,6 +30,10 @@
   margin-bottom: 10px;
 }
 
+.catalog-img {
+  width: 208px;
+}
+
 .catalog-info-wrapper {
   text-align: left;
 }
@@ -79,7 +83,7 @@
 .catalog-button:hover,
 .catalog-button:focus {
   background-color: var(--hover-color);
-  cursor:pointer;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 768px) {
@@ -112,6 +116,11 @@
     padding-right: 6px;
   }
 
+  .catalog-img {
+    width: 268px;
+    height: 292px;
+  }
+
   .catalog-list-name {
     font-size: 20px;
     line-height: 1;
@@ -126,6 +135,11 @@
 
   .catalog-img-wrapper {
     padding: 0;
+  }
+
+  .catalog-img {
+    width: 304px;
+    height: 312px;
   }
 
   .catalog-list-item {
