@@ -37,16 +37,16 @@
   border: 1px solid rgba(12, 12, 12, 0.05);
 }
 
-
 .sale-big-img-wrapper:hover {
   cursor: pointer;
 }
 
 .sale-big-img {
   transition: transform 0.3s ease;
+  max-width: 235px;
 }
 
-.sale-big-img:hover{
+.sale-big-img:hover {
   transform: scale(1.1);
   cursor: pointer;
 }
@@ -157,6 +157,10 @@
     padding: 80px 112px;
   }
 
+  .sale-big-img {
+    max-width: 328px;
+  }
+
   .sale-info-wrapper {
     border-radius: 50px;
     padding: 60px;
@@ -235,5 +239,3 @@
     transform: rotate(360deg);
   }
 }
-
-

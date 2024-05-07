@@ -61,19 +61,27 @@
           </li>
         </ul>
         <div class="sale-big-img-wrapper">
-          <img
-            class="sale-big-img"
-            srcset="
-              ./img/sale/desktop/sale-desktop-big@1x.webp 328w,
-              ./img/sale/desktop/sale-desktop-big@2x.webp 656w,
-              ./img/sale/mobile/sale-mobile-big@1x.webp   235w,
-              ./img/sale/mobile/sale-mobile-big@2x.webp   470w
-            "
-            sizes="(min-width: 768px) 328px, 
-               (max-width: 767px) 235px"
-            src="./img/sale/mobile/sale-mobile-big@1x.webp"
-            alt="Big whatch photo"
-          />
+          <picture>
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ./img/sale/desktop/sale-desktop-big@1x.webp 1x,
+                ./img/sale/desktop/sale-desktop-big@2x.webp 2x
+              "
+            />
+            <source
+              media="(max-width: 767px)"
+              srcset="
+                ./img/sale/mobile/sale-mobile-big@1x.webp 1x,
+                ./img/sale/mobile/sale-mobile-big@2x.webp 2x
+              "
+            />
+            <img
+              class="sale-big-img"
+              src="./img/sale/mobile/sale-mobile-big@1x.webp"
+              alt="Big watch photo"
+            />
+          </picture>
         </div>
       </div>
       <div class="sale-info-wrapper">
