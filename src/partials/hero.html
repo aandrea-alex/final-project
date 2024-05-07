@@ -69,21 +69,35 @@
       </div>
     </div>
     <div class="hero-img-wrapper">
-      <img
-        class="hero-img"
-        srcset="
-          ./img/hero/bgr/hero-mobile-bgr@1x.webp   335w,
-          ./img/hero/bgr/hero-mobile-bgr@2x.webp   670w,
-          ./img/hero/bgr/hero-tablet-bgr@1x.webp   704w,
-          ./img/hero/bgr/hero-tablet-bgr@2x.webp  1408w,
-          ./img/hero/bgr/hero-desktop-bgr@1x.webp 1150w,
-          ./img/hero/bgr/hero-desktop-bgr@2x.webp 2300w
-        "
-        sizes="(min-width:1280px) 1150px, (min-width:768px) 704px,        
-        (max-width:767px) 335px"
-        src="./img/hero/bgr/hero-mobile-bgr@1x.webp"
-        alt="Magic Watch"
-      />
+      <picture>
+        <source
+          media="(min-width: 1280px)"
+          srcset="
+            ./img/hero/bgr/hero-desktop-bgr@1x.webp 1150w,
+            ./img/hero/bgr/hero-desktop-bgr@2x.webp 2300w
+          "
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            ./img/hero/bgr/hero-tablet-bgr@1x.webp  704w,
+            ./img/hero/bgr/hero-tablet-bgr@2x.webp 1408w
+          "
+        />
+        <source
+          media="(max-width: 767px)"
+          srcset="
+            ./img/hero/bgr/hero-mobile-bgr@1x.webp 335w,
+            ./img/hero/bgr/hero-mobile-bgr@2x.webp 670w
+          "
+        />
+        <img
+          class="hero-img"
+          src="./img/hero/bgr/hero-mobile-bgr@1x.webp"
+          sizes="(min-width: 1280px) 1150px, (min-width: 768px) 704px, (max-width: 767px) 335px"
+          alt="Magic Watch"
+        />
+      </picture>
     </div>
     <div id="id-about"></div>
   </div>
