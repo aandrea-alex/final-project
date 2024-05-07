@@ -39,14 +39,21 @@
 }
 
 .hero-photos-list {
+  display: flex;
   min-width: 108px;
+  height: 44px;
   position: relative;
   padding: 0;
   margin: 0;
 }
 
-.hero-photos-list > :nth-child(n + 2) {
+.hero-photos-list > :nth-child(3-n) {
   position: absolute;
+}
+
+.hero-photos-list > :nth-child(1) {
+  top: 0;
+  left: 0;
 }
 
 .hero-photos-list > :nth-child(2) {
@@ -124,6 +131,7 @@
 
   .hero-photos-list {
     width: 136px;
+    height: 56px;
   }
 
   .hero-photos-list > :nth-child(2) {
@@ -156,7 +164,8 @@
   }
 
   .hero-photos-list {
-    width: 146px;
+    min-width: 146px;
+    height: 60px;
   }
 
   .hero-photos-list > :nth-child(2) {
