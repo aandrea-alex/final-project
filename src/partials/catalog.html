@@ -4,21 +4,34 @@
     <ul class="catalog-list">
       <li class="catalog-list-item">
         <div class="catalog-img-wrapper">
-          <img
-            class="catalog-list-img"
-            srcset="
-              ./img/catalog/desktop/catalog-desktop-w1@1x.webp 304w,
-              ./img/catalog/desktop/catalog-desktop-w1@2x.webp 608w,
-              ./img/catalog/tablet/catalog-tablet-w1@1x.webp   268w,
-              ./img/catalog/tablet/catalog-tablet-w1@2x.webp   536w,
-              ./img/catalog/mobile/catalog-mobile-w1@1x.webp   208w,
-              ./img/catalog/mobile/catalog-mobile-w1@2x.webp   416w
-            "
-            sizes="(min-width: 1280px) 304px, (min-width: 768px) 268px, 
-               (max-width: 767px) 208px"
-            src="./img/catalog/mobile/catalog-mobile-w1@1x.webp"
-            alt="Garmin Fenix 7X Pro Sapphire Solar"
-          />
+          <picture>
+            <source
+              srcset="
+                ./img/catalog/desktop/catalog-desktop-w1@1x.webp 1x,
+                ./img/catalog/desktop/catalog-desktop-w1@2x.webp 2x
+              "
+              media="(min-width:1280px)"
+            />
+            <source
+              srcset="
+                ./img/catalog/tablet/catalog-tablet-w1@1x.webp 1x,
+                ./img/catalog/tablet/catalog-tablet-w1@2x.webp 2x
+              "
+              media="(min-width:768px) and (max-width:1279px)"
+            />
+            <source
+              srcset="
+                ./img/catalog/mobile/catalog-mobile-w1@1x.webp 1x,
+                ./img/catalog/mobile/catalog-mobile-w1@2x.webp 2x
+              "
+              media="(max-width:767px)"
+            />
+            <img
+              src="./img/catalog/mobile/catalog-mobile-w1@1x.webp"
+              sizes="(max-width: 767px) 208px, (min-width: 768px) 268px, (min-width: 1280px) 304px"
+              alt="Garmin Fenix 7X Pro Sapphire Solar"
+            />
+          </picture>
         </div>
         <div class="catalog-info-wrapper">
           <h3 class="catalog-list-name">Garmin Fenix 7X Pro Sapphire Solar</h3>
@@ -28,21 +41,34 @@
 
       <li class="catalog-list-item">
         <div class="catalog-img-wrapper">
-          <img
-            class="catalog-list-img"
-            srcset="
-              ./img/catalog/desktop/catalog-desktop-w2@1x.webp 304w,
-              ./img/catalog/desktop/catalog-desktop-w2@2x.webp 608w,
-              ./img/catalog/tablet/catalog-tablet-w2@1x.webp   268w,
-              ./img/catalog/tablet/catalog-tablet-w2@2x.webp   536w,
-              ./img/catalog/mobile/catalog-mobile-w2@1x.webp   208w,
-              ./img/catalog/mobile/catalog-mobile-w2@2x.webp   416w
-            "
-            sizes="(min-width: 1280px) 304px, (min-width: 768px) 268px, 
-               (max-width: 767px) 208px"
-            src="./img/catalog/mobile/catalog-mobile-w2@1x.webp"
-            alt="Garmin Marq Athlete"
-          />
+          <picture>
+            <source
+              srcset="
+                ./img/catalog/mobile/catalog-mobile-w2@1x.webp 1x,
+                ./img/catalog/mobile/catalog-mobile-w2@2x.webp 2x
+              "
+              media="(max-width:767px)"
+            />
+            <source
+              srcset="
+                ./img/catalog/tablet/catalog-tablet-w2@1x.webp 1x,
+                ./img/catalog/tablet/catalog-tablet-w2@2x.webp 2x
+              "
+              media="(min-width:768px)"
+            />
+            <source
+              srcset="
+                ./img/catalog/desktop/catalog-desktop-w2@1x.webp 1x,
+                ./img/catalog/desktop/catalog-desktop-w2@2x.webp 2x
+              "
+              media="(min-width:1280px)"
+            />
+            <img
+              src="./img/catalog/mobile/catalog-mobile-w2@1x.webp"
+              sizes="(max-width: 767px) 208px, (min-width: 768px) 268px, (min-width: 1280px) 304px"
+              height="226"
+            />
+          </picture>
         </div>
         <div class="catalog-info-wrapper">
           <h3 class="catalog-list-name">Garmin Marq Athlete €450</h3>
@@ -51,21 +77,34 @@
       </li>
       <li class="catalog-list-item">
         <div class="catalog-img-wrapper">
-          <img
-            class="catalog-list-img"
-            srcset="
-              ./img/catalog/desktop/catalog-desktop-w3@1x.webp 304w,
-              ./img/catalog/desktop/catalog-desktop-w3@2x.webp 608w,
-              ./img/catalog/tablet/catalog-tablet-w3@1x.webp   268w,
-              ./img/catalog/tablet/catalog-tablet-w3@2x.webp   536w,
-              ./img/catalog/mobile/catalog-mobile-w3@1x.webp   208w,
-              ./img/catalog/mobile/catalog-mobile-w3@2x.webp   416w
-            "
-            sizes="(min-width: 1280px) 304px, (min-width: 768px) 268px, 
-               (max-width: 767px) 208px"
-            src="./img/catalog/mobile/catalog-mobile-w3@1x.webp"
-            alt="Garmin Descent MK1"
-          />
+          <picture>
+            <source
+              srcset="
+                ./img/catalog/mobile/catalog-mobile-w3@1x.webp 1x,
+                ./img/catalog/mobile/catalog-mobile-w3@2x.webp 2x
+              "
+              media="(max-width:767px)"
+            />
+            <source
+              srcset="
+                ./img/catalog/tablet/catalog-tablet-w3@1x.webp 1x,
+                ./img/catalog/tablet/catalog-tablet-w3@2x.webp 2x
+              "
+              media="(min-width:768px)"
+            />
+            <source
+              srcset="
+                ./img/catalog/desktop/catalog-desktop-w3@1x.webp 1x,
+                ./img/catalog/desktop/catalog-desktop-w3@2x.webp 2x
+              "
+              media="(min-width:1280px)"
+            />
+            <img
+              src="./img/catalog/mobile/catalog-mobile-w3@1x.webp"
+              sizes="(max-width: 767px) 208px, (min-width: 768px) 268px, (min-width: 1280px) 304px"
+              alt="Garmin Descent MK1"
+            />
+          </picture>
         </div>
         <div class="catalog-info-wrapper">
           <h3 class="catalog-list-name">Garmin Descent MK1</h3>
@@ -75,21 +114,34 @@
 
       <li class="catalog-list-item">
         <div class="catalog-img-wrapper">
-          <img
-            class="catalog-list-img"
-            srcset="
-              ./img/catalog/desktop/catalog-desktop-w4@1x.webp 304w,
-              ./img/catalog/desktop/catalog-desktop-w4@2x.webp 608w,
-              ./img/catalog/tablet/catalog-tablet-w4@1x.webp   268w,
-              ./img/catalog/tablet/catalog-tablet-w4@2x.webp   536w,
-              ./img/catalog/mobile/catalog-mobile-w4@1x.webp   208w,
-              ./img/catalog/mobile/catalog-mobile-w4@2x.webp   416w
-            "
-            sizes="(min-width: 1280px) 304px, (min-width: 768px) 268px, 
-               (max-width: 767px) 208px"
-            src="./img/catalog/mobile/catalog-mobile-w4@1x.webp"
-            alt="Garmin D2 Delta PX"
-          />
+          <picture>
+            <source
+              srcset="
+                ./img/catalog/mobile/catalog-mobile-w4@1x.webp 1x,
+                ./img/catalog/mobile/catalog-mobile-w4@2x.webp 2x
+              "
+              media="(max-width:767px)"
+            />
+            <source
+              srcset="
+                ./img/catalog/tablet/catalog-tablet-w4@1x.webp 1x,
+                ./img/catalog/tablet/catalog-tablet-w4@2x.webp 2x
+              "
+              media="(min-width:768px)"
+            />
+            <source
+              srcset="
+                ./img/catalog/desktop/catalog-desktop-w4@1x.webp 1x,
+                ./img/catalog/desktop/catalog-desktop-w4@2x.webp 2x
+              "
+              media="(min-width:1280px)"
+            />
+            <img
+              src="./img/catalog/mobile/catalog-mobile-w4@1x.webp"
+              sizes="(max-width: 767px) 208px, (min-width: 768px) 268px, (min-width: 1280px) 304px"
+              alt="Garmin D2 Delta PX"
+            />
+          </picture>
         </div>
 
         <div class="catalog-info-wrapper">
@@ -100,18 +152,27 @@
 
       <li class="catalog-list-item">
         <div class="catalog-img-wrapper">
-          <img
-            srcset="
-              ./img/catalog/desktop/catalog-desktop-w5@1x.webp 304w,
-              ./img/catalog/desktop/catalog-desktop-w5@2x.webp 608w,
-              ./img/catalog/tablet/catalog-tablet-w5@1x.webp   268w,
-              ./img/catalog/tablet/catalog-tablet-w5@2x.webp   536w
-            "
-            sizes="(min-width: 1280px) 304px, (min-width: 768px) 268px, 
-               (max-width: 767px) 208px"
-            src="./img/catalog/tablet/catalog-tablet-w5@1x.webp"
-            alt="MGarmin Fenix 6 Pro Solar"
-          />
+          <picture>
+            <source
+              srcset="
+                ./img/catalog/desktop/catalog-desktop-w5@1x.webp 304w,
+                ./img/catalog/desktop/catalog-desktop-w5@2x.webp 608w
+              "
+              media="(min-width: 1280px)"
+            />
+            <source
+              srcset="
+                ./img/catalog/tablet/catalog-tablet-w5@1x.webp 268w,
+                ./img/catalog/tablet/catalog-tablet-w5@2x.webp 536w
+              "
+              media="(min-width: 768px)"
+            />
+            <img
+              src="./img/catalog/tablet/catalog-tablet-w5@1x.webp"
+              sizes="(max-width: 767px) 208px, (min-width: 768px) 268px, (min-width: 1280px) 304px"
+              alt="Garmin Fenix 6 Pro Solar"
+            />
+          </picture>
         </div>
         <div class="catalog-info-wrapper">
           <h3 class="catalog-list-name">Garmin Fenix 6 Pro Solar</h3>
@@ -121,20 +182,28 @@
 
       <li class="catalog-list-item">
         <div class="catalog-img-wrapper">
-          <img
-            class="catalog-list-img"
-            srcset="
-              ./img/catalog/desktop/catalog-desktop-w6@1x.webp 304w,
-              ./img/catalog/desktop/catalog-desktop-w6@2x.webp 608w,
-              ./img/catalog/tablet/catalog-tablet-w6@1x.webp   268w,
-              ./img/catalog/tablet/catalog-tablet-w6@2x.webp   536w
-            "
-            sizes="(min-width: 1280px) 304px, (min-width: 768px) 268px, 
-               (max-width: 767px) 208px"
-            src="./img/catalog/tablet/catalog-tablet-w6@1x.webp"
-            alt="Tube Watch S42 Date Steel With Black Case
-"
-          />
+          <picture>
+            <source
+              srcset="
+                ./img/catalog/desktop/catalog-desktop-w6@1x.webp 304w,
+                ./img/catalog/desktop/catalog-desktop-w6@2x.webp 608w
+              "
+              media="(min-width: 1280px)"
+            />
+            <source
+              srcset="
+                ./img/catalog/tablet/catalog-tablet-w6@1x.webp 268w,
+                ./img/catalog/tablet/catalog-tablet-w6@2x.webp 536w
+              "
+              media="(min-width: 768px)"
+            />
+            <img
+              class="catalog-list-img"
+              src="./img/catalog/tablet/catalog-tablet-w6@1x.webp"
+              sizes="(max-width: 767px) 208px, (min-width: 768px) 268px, (min-width: 1280px) 304px"
+              alt="Tube Watch S42 Date Steel With Black Case"
+            />
+          </picture>
         </div>
         <div class="catalog-info-wrapper">
           <h3 class="catalog-list-name">
