@@ -15,54 +15,97 @@
       <div class="hero-images-wrapper">
         <ul class="hero-photos-list">
           <li class="hero-photo-wrapper">
-            <img
-              class="hero-photo"
-              srcset="
-                ./img/hero/photo/mobile/hero-mobile-photo1@1x.jpg    44w,
-                ./img/hero/photo/mobile/hero-mobile-photo1@2x.jpg    88w,
-                ./img/hero/photo/tablet/hero-tablet-photo1@1x.jpg    56w,
-                ./img/hero/photo/tablet/hero-tablet-photo1@2x.jpg   112w,
-                ./img/hero/photo/desktop/hero-desktop-photo1@1x.jpg  60w,
-                ./img/hero/photo/desktop/hero-desktop-photo1@2x.jpg 120w
-              "
-              sizes="(min-width:1280px) 60px, (min-width:768px) 56px, (max-width:767px) 44px"
-              src="./img/hero/photo/mobile/hero-mobile-photo1@1x.jpg"
-              alt="hero-1 photo"
-            />
+            <picture>
+              <source
+                media="(min-width: 1280px)"
+                srcset="
+                  ./img/hero/photo/desktop/hero-desktop-photo1@1x.jpg  60w,
+                  ./img/hero/photo/desktop/hero-desktop-photo1@2x.jpg 120w
+                "
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  ./img/hero/photo/tablet/hero-tablet-photo1@1x.jpg  56w,
+                  ./img/hero/photo/tablet/hero-tablet-photo1@2x.jpg 112w
+                "
+              />
+              <source
+                media="(max-width: 767px)"
+                srcset="
+                  ./img/hero/photo/mobile/hero-mobile-photo1@1x.jpg 44w,
+                  ./img/hero/photo/mobile/hero-mobile-photo1@2x.jpg 88w
+                "
+              />
+              <img
+                class="hero-photo"
+                src="./img/hero/photo/mobile/hero-mobile-photo1@1x.jpg"
+                sizes="(min-width: 1280px) 60px, (min-width: 768px) 56px, (max-width: 767px) 44px"
+                alt="hero-1 photo"
+              />
+            </picture>
           </li>
           <li class="hero-photo-wrapper">
-            <img
-              class="hero-photo"
-              srcset="
-                ./img/hero/photo/mobile/hero-mobile-photo2@1x.jpg    44w,
-                ./img/hero/photo/mobile/hero-mobile-photo2@2x.jpg    88w,
-                ./img/hero/photo/tablet/hero-tablet-photo2@1x.jpg    56w,
-                ./img/hero/photo/tablet/hero-tablet-photo2@2x.jpg   112w,
-                ./img/hero/photo/desktop/hero-desktop-photo2@1x.jpg  60w,
-                ./img/hero/photo/desktop/hero-desktop-photo2@2x.jpg 120w
-              "
-              sizes="(min-width:1280px) 60px, (min-width:768px) 56px,        
-        (max-width:767px) 44px"
-              src="./img/hero/photo/mobile/hero-mobile-photo1@1x.jpg"
-              alt="hero-2 photo"
-            />
+            <picture>
+              <source
+                media="(min-width: 1280px)"
+                srcset="
+                  ./img/hero/photo/desktop/hero-desktop-photo2@1x.jpg  60w,
+                  ./img/hero/photo/desktop/hero-desktop-photo2@2x.jpg 120w
+                "
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  ./img/hero/photo/tablet/hero-tablet-photo2@1x.jpg  56w,
+                  ./img/hero/photo/tablet/hero-tablet-photo2@2x.jpg 112w
+                "
+              />
+              <source
+                media="(max-width: 767px)"
+                srcset="
+                  ./img/hero/photo/mobile/hero-mobile-photo2@1x.jpg 44w,
+                  ./img/hero/photo/mobile/hero-mobile-photo2@2x.jpg 88w
+                "
+              />
+              <img
+                class="hero-photo"
+                src="./img/hero/photo/mobile/hero-mobile-photo2@1x.jpg"
+                sizes="(min-width: 1280px) 60px, (min-width: 768px) 56px, (max-width: 767px) 44px"
+                alt="hero-2 photo"
+              />
+            </picture>
           </li>
           <li class="hero-photo-wrapper">
-            <img
-              class="hero-photo"
-              srcset="
-                ./img/hero/photo/mobile/hero-mobile-photo3@1x.jpg    44w,
-                ./img/hero/photo/mobile/hero-mobile-photo3@2x.jpg    88w,
-                ./img/hero/photo/tablet/hero-tablet-photo3@1x.jpg    56w,
-                ./img/hero/photo/tablet/hero-tablet-photo3@2x.jpg   112w,
-                ./img/hero/photo/desktop/hero-desktop-photo3@1x.jpg  60w,
-                ./img/hero/photo/desktop/hero-desktop-photo3@2x.jpg 120w
-              "
-              sizes="(min-width:1280px) 60px, (min-width:768px) 56px,        
-        (max-width:767px) 44px"
-              src="./img/hero/photo/mobile/hero-mobile-photo1@1x.jpg"
-              alt="hero-3 photo"
-            />
+            <picture>
+              <source
+                media="(min-width: 1280px)"
+                srcset="
+                  ./img/hero/photo/desktop/hero-desktop-photo3@1x.jpg  60w,
+                  ./img/hero/photo/desktop/hero-desktop-photo3@2x.jpg 120w
+                "
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  ./img/hero/photo/tablet/hero-tablet-photo3@1x.jpg  56w,
+                  ./img/hero/photo/tablet/hero-tablet-photo3@2x.jpg 112w
+                "
+              />
+              <source
+                media="(max-width: 767px)"
+                srcset="
+                  ./img/hero/photo/mobile/hero-mobile-photo3@1x.jpg 44w,
+                  ./img/hero/photo/mobile/hero-mobile-photo3@2x.jpg 88w
+                "
+              />
+              <img
+                class="hero-photo"
+                src="./img/hero/photo/mobile/hero-mobile-photo3@1x.jpg"
+                sizes="(min-width: 1280px) 60px, (min-width: 768px) 56px, (max-width: 767px) 44px"
+                alt="hero-3 photo"
+              />
+            </picture>
           </li>
         </ul>
         <button class="hero-scroll js-hero-scroll">Scroll down</button>
