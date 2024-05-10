@@ -17,7 +17,7 @@
 
     
     <script type="module" crossorigin src="/final-project/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/final-project/assets/index-69db9e1a.css">
+    <link rel="stylesheet" href="/final-project/assets/index-323ef268.css">
   </head>
   <body>
     <header class="header-page fixed-menu">
@@ -516,14 +516,21 @@
           </li>
         </ul>
         <div class="sale-big-img-wrapper">
-          <img
-            class="sale-big-img"
-            srcset="/final-project/assets/sale-desktop-big@1x-775c96d7.webp 328w, /final-project/assets/sale-desktop-big@2x-dae9ccac.webp 656w, /final-project/assets/sale-mobile-big@1x-0a074130.webp 235w, /final-project/assets/sale-mobile-big@2x-424e6cf3.webp 470w"
-            sizes="(min-width: 768px) 328px, 
-               (max-width: 767px) 235px"
-            src="/final-project/assets/sale-mobile-big@1x-0a074130.webp"
-            alt="Big whatch photo"
-          />
+          <picture>
+            <source
+              media="(min-width: 768px)"
+              srcset="/final-project/assets/sale-desktop-big@1x-775c96d7.webp 1x, /final-project/assets/sale-desktop-big@2x-dae9ccac.webp 2x"
+            />
+            <source
+              media="(max-width: 767px)"
+              srcset="/final-project/assets/sale-mobile-big@1x-0a074130.webp 1x, /final-project/assets/sale-mobile-big@2x-424e6cf3.webp 2x"
+            />
+            <img
+              class="sale-big-img"
+              src="/final-project/assets/sale-mobile-big@1x-0a074130.webp"
+              alt="Big watch photo"
+            />
+          </picture>
         </div>
       </div>
       <div class="sale-info-wrapper">
